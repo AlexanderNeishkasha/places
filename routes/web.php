@@ -11,5 +11,5 @@
 |
 */
 
-Route::view('/places/create', 'create_places');
+Route::get('/places/create', 'PlaceController@showForm');
 Route::post('/places/create', 'PlaceController@create');
