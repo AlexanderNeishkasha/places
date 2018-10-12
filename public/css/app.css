@@ -2777,7 +2777,8 @@ nav,
 
 .z-depth-3,
 .create,
-.place_collection {
+.place_collection,
+.placepage {
   -webkit-box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
 }
@@ -9650,5 +9651,34 @@ input[type=range]::-ms-thumb {
 
 .place_link {
   color: #2196F3;
+}
+
+.placepage {
+  border: 1px solid #212121;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #424242;
+}
+
+.placepage_name {
+  color: #2196F3;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: normal;
+  margin: 15px;
+}
+
+.placepage_type {
+  color: white;
+  margin: 15px;
+}
+
+.placepage_slider {
+  height: 250px;
+}
+
+.placepage_slider.carousel.carousel-slider .carousel-item {
+  min-height: 250px;
 }
 

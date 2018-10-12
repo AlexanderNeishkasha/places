@@ -792,8 +792,14 @@ __webpack_require__(10);
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems);
+    var selectElems = document.querySelectorAll('select');
+    var selects = M.FormSelect.init(selectElems);
+    var carouselElem = document.querySelectorAll('.carousel');
+    var carousel = M.Carousel.init(carouselElem, {
+        fullWidth: true,
+        indicators: true
+    });
+    console.log(carousel);
 });
 
 /***/ }),
