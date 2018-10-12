@@ -24,7 +24,7 @@ class PlaceCreate extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|unique:places|alpha',
+            'name' => 'required|unique:places|alpha_spaces',
             'type' => 'required'
         ];
     }
