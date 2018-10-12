@@ -1,0 +1,35 @@
+.placepage {
+  @extend .z-depth-3;
+  border: 1px solid color('grey', 'darken-4');
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: color('grey', 'darken-3');
+
+  &#{_name} {
+    color: color('blue', 'base');
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 15px;
+  }
+
+  &#{_info} {
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &#{_type} {
+    color: white;
+  }
+
+  &#{_slider} {
+    height: 250px;
+
+    &.carousel.carousel-slider .carousel-item {
+      min-height: 250px;
+    }
+  }
+}
