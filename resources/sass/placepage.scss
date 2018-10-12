@@ -14,9 +14,15 @@
     margin: 15px;
   }
 
+  &#{_info} {
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
   &#{_type} {
     color: white;
-    margin: 15px;
   }
 
   &#{_slider} {

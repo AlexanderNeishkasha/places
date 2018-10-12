@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\PlaceCreate;
 use App\Models\Place;
 use App\Models\Type;
+use App\Models\Image;
 
 class PlaceController extends Controller
 {
@@ -34,6 +35,7 @@ class PlaceController extends Controller
         $place = Place::join('types', 'places.type', '=', 'types.id')
             ->select('places.*', 'types.name as type_name')
             ->where('places.id', $id)->first();
-        return view('place', ['place' => $place]);
+        $images = Image::where('place_id', $id)->get();
+        return view('place', ['place' => $place, 'images' => $images]);
     }
 }

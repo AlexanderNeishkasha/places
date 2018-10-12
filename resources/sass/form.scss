@@ -33,3 +33,20 @@
 .error-message {
   color: color('red', 'base') !important;
 }
+
+.btn {
+  background-color: color('blue', 'base');
+  &:hover {
+    background-color: lighten(color('blue', 'base'), 10%);
+  }
+}
+
+input.valid[type=text]:not(.browser-default) {
+  border-bottom: 1px solid color('blue', 'base');
+  box-shadow: 0 1px 0 0 color('blue', 'base');
+}
+
+.select-wrapper input.select-dropdown {
+  padding-right: 30px;
+  box-sizing: border-box;
+}

@@ -9602,6 +9602,30 @@ input[type=range]::-ms-thumb {
   color: #F44336 !important;
 }
 
+.btn,
+.btn-large,
+.btn-small {
+  background-color: #2196F3;
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+  background-color: #51adf6;
+}
+
+input.valid[type=text]:not(.browser-default) {
+  border-bottom: 1px solid #2196F3;
+  -webkit-box-shadow: 0 1px 0 0 #2196F3;
+          box-shadow: 0 1px 0 0 #2196F3;
+}
+
+.select-wrapper input.select-dropdown {
+  padding-right: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .create {
   max-width: 500px;
   margin-right: auto;
@@ -9669,9 +9693,21 @@ input[type=range]::-ms-thumb {
   margin: 15px;
 }
 
+.placepage_info {
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .placepage_type {
   color: white;
-  margin: 15px;
 }
 
 .placepage_slider {
