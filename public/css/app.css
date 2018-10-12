@@ -2775,7 +2775,8 @@ nav,
 
 /* 12dp elevation modified*/
 
-.z-depth-3 {
+.z-depth-3,
+.place_collection {
   -webkit-box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
 }
@@ -9624,5 +9625,23 @@ input[type=range]::-ms-thumb {
 
 .create_text:focus + label {
   color: #2196F3 !important;
+}
+
+.place_collection {
+  border: 1px solid #212121;
+}
+
+.place_collection .place_item {
+  background-color: #424242;
+  border-bottom: 1px solid #212121;
+  color: white;
+}
+
+.place_name {
+  font-weight: bold;
+}
+
+.place_link {
+  color: #2196F3;
 }
 
