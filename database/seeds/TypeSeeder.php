@@ -11,10 +11,10 @@ class TypeSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('types')->insert(['name' => 'Парк']);
-        DB::table('types')->insert(['name' => 'Музей']);
-        DB::table('types')->insert(['name' => 'Планетарий']);
-        DB::table('types')->insert(['name' => 'Торговый центр']);
-        DB::table('types')->insert(['name' => 'Университет']);
+        DB::table('types')->insert(['name' => 'Park']);
+        DB::table('types')->insert(['name' => 'Museum']);
+        DB::table('types')->insert(['name' => 'Planetarium']);
+        DB::table('types')->insert(['name' => 'Shopping center']);
+        DB::table('types')->insert(['name' => 'University']);
     }
 }
