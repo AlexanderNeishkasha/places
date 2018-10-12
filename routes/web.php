@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/places/create', 'PlaceController@showForm');
+Route::post('/places/create', 'PlaceController@create');

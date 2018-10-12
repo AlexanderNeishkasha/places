@@ -1,0 +1,35 @@
+.input-field {
+  label {
+    color: white;
+  }
+  input {
+    color: white;
+  }
+}
+
+.dropdown-content {
+  background-color: color('grey', 'darken-4') !important;
+}
+
+.select-dropdown {
+  li.disabled span {
+    color: white;
+  }
+
+  li > span {
+    color: color('blue', 'base');
+  }
+}
+
+.select-wrapper  {
+  .caret {
+    fill: white;
+  }
+  input.select-dropdown:focus {
+    border-bottom: 1px solid color('blue', 'base');
+  }
+}
+
+.error-message {
+  color: color('red', 'base') !important;
+}
