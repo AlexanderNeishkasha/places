@@ -2776,6 +2776,7 @@ nav,
 /* 12dp elevation modified*/
 
 .z-depth-3,
+.create,
 .place_collection {
   -webkit-box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
@@ -9577,7 +9578,7 @@ input[type=range]::-ms-thumb {
 }
 
 .dropdown-content {
-  background-color: #212121 !important;
+  background-color: #424242 !important;
 }
 
 .select-dropdown li.disabled span {
@@ -9611,6 +9612,9 @@ input[type=range]::-ms-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 15px;
+  border: 1px solid #212121;
+  background-color: #424242;
 }
 
 .create_text {
@@ -9629,6 +9633,9 @@ input[type=range]::-ms-thumb {
 
 .place_collection {
   border: 1px solid #212121;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .place_collection .place_item {

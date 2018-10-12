@@ -3,6 +3,9 @@
   &#{_collection} {
     @extend .z-depth-3;
     border: 1px solid color('grey', 'darken-4');
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
 
     & .place_item {
       background-color: color('grey', 'darken-3');
