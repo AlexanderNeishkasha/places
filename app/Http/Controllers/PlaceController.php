@@ -17,13 +17,23 @@ class PlaceController extends Controller
 
     public function create(PlaceCreate $request)
     {
-        Place::create($request->only(['name', 'type']));
-        return redirect('/places/create');
+        $place = Place::create($request->only(['name', 'type']));
+        return redirect("/places/{$place->id}");
     }
 
-    public function show() {
+    public function showAll()
+    {
         $places = Place::join('types', 'places.type', '=', 'types.id')
-            ->select('places.*', 'types.name as type_name')->get();
+            ->select('places.*', 'types.name as type_name')
+            ->orderByDesc('created_at')->get();
         return view('show_places', ['places' => $places]);
+    }
+
+    public function show($id)
+    {
+        $place = Place::join('types', 'places.type', '=', 'types.id')
+            ->select('places.*', 'types.name as type_name')
+            ->where('places.id', $id)->first();
+        return view('place', ['place' => $place]);
     }
 }

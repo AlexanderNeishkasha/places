@@ -14,4 +14,5 @@
 Route::get('/places/create', 'PlaceController@showForm');
 Route::post('/places/create', 'PlaceController@create');
 
-Route::get('/places', 'PlaceController@show');
+Route::get('/places', 'PlaceController@showAll');
+Route::get('/places/{id}', 'PlaceController@show');
